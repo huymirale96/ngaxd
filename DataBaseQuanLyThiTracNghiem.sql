@@ -1,5 +1,5 @@
 ﻿Create Database quanLyThiTracNghiem;
-
+//sua sql
 Use quanLyThiTracNghiem;
 
 Create Table tblSinhVien
