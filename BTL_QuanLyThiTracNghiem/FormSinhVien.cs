@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+//sua tren git nga
 
 namespace BTL_QuanLyThiTracNghiem
 {
