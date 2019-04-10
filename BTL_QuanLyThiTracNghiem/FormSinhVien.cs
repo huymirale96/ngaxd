@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 //sua tren git nga
 //sua local1pok
+//edit from git
 
 namespace BTL_QuanLyThiTracNghiem
 {
