@@ -13,6 +13,7 @@ using System.Data.SqlClient;
 //edit from git
 //dc rồi
 //sua code
+//toi khong biết
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
