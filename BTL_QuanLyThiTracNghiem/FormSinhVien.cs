@@ -14,6 +14,7 @@ using System.Data.SqlClient;
 //dc rồi
 //sua code
 //toi khong biết
+//viet tu server
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
