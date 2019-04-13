@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 //sua tren git nga
 //sua local1pok
 //edit from git
-//okk2333111111222
+//okk23331111112223
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
