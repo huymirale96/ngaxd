@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 //sua tren git nga
 //sua local1pok
 //edit from git
@@ -20,7 +21,8 @@ namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
     {
-        string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+       // string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+        string cnnstr = ConfigurationManager.ConnectionStrings["test"].ConnectionString;
         public FormSinhVien()
         {
             InitializeComponent();
