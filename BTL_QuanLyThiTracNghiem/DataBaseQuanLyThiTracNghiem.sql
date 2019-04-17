@@ -1,7 +1,7 @@
 ﻿Create Database quanLyThiTracNghiem;
 //sua sql
 Use quanLyThiTracNghiem;
---11
+--11-222
 Create Table tblSinhVien
 (
 sMaSinhVien Varchar(8) Primary Key,
