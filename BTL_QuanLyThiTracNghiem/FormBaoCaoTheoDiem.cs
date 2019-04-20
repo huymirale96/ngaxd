@@ -33,7 +33,8 @@ namespace BTL_QuanLyThiTracNghiem
                 if(textBox2.Text == "")
                 {
                     ReportDocument rd = new ReportDocument();
-                    rd.Load(@"C:\Users\Huy dzz\Documents\Visual Studio 2015\Projects\BTL_QuanLyThiTracNghiem\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
+                    //rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\FormBaoCaoTopDiem.cs");
+                    rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
                     rd.SetParameterValue("@diemThap", textBox1.Text);
                     rd.SetParameterValue("@diemCao", 10);
                     crystalReportViewer1.ReportSource = rd;

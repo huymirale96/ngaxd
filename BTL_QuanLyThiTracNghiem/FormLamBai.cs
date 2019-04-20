@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormLamBai : Form
     {
-        string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+        //string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+        string cnnstr = ConfigurationManager.ConnectionStrings["test"].ConnectionString;
         DataTable table3 = new DataTable();
         int stt = 0;
         public String maSV = "";

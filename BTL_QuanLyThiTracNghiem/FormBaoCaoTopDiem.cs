@@ -21,7 +21,8 @@ namespace BTL_QuanLyThiTracNghiem
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
             ReportDocument rd = new ReportDocument();
-            rd.Load(@"C:\Users\Huy dzz\documents\visual studio 2015\Projects\BTL_QuanLyThiTracNghiem\BTL_QuanLyThiTracNghiem\BaoCaoTopDiem.rpt");
+
+            rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\BaoCaoTopDiem.rpt");
             crystalReportViewer1.ReportSource = rd;
 
         }

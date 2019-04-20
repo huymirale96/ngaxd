@@ -53,6 +53,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labelDiem = new System.Windows.Forms.Label();
             this.labelCau = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -262,11 +263,11 @@
             // labelDiem
             // 
             this.labelDiem.AutoSize = true;
-            this.labelDiem.Location = new System.Drawing.Point(32, 201);
+            this.labelDiem.Location = new System.Drawing.Point(84, 201);
             this.labelDiem.Name = "labelDiem";
-            this.labelDiem.Size = new System.Drawing.Size(53, 13);
+            this.labelDiem.Size = new System.Drawing.Size(13, 13);
             this.labelDiem.TabIndex = 23;
-            this.labelDiem.Text = "labelDiem";
+            this.labelDiem.Text = "0";
             // 
             // labelCau
             // 
@@ -277,11 +278,21 @@
             this.labelCau.TabIndex = 24;
             this.labelCau.Text = "label7";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 201);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Điểm: ";
+            // 
             // FormLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 445);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.labelCau);
             this.Controls.Add(this.labelDiem);
             this.Controls.Add(this.comboBox1);
@@ -341,5 +352,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label labelDiem;
         private System.Windows.Forms.Label labelCau;
+        private System.Windows.Forms.Label label7;
     }
 }

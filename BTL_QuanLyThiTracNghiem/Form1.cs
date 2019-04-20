@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace BTL_QuanLyThiTracNghiem
 {
     public delegate void DataSent(String msg1, String msg2, String msg3);
     public partial class Form1 : Form
     {
-        string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+        //string cnnstr = @"Data Source=DESKTOP-4TI11EU\SQLEXPRESS;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True";
+        string cnnstr = ConfigurationManager.ConnectionStrings["test"].ConnectionString;
         public event DataSent dataSent;
 
         //this.dataSent();
