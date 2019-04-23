@@ -16,7 +16,7 @@ using System.Configuration;
 //sua code
 //toi khong biết
 //viet tu server 11
-//222
+//222212122
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
