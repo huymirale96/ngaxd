@@ -34,7 +34,7 @@ namespace BTL_QuanLyThiTracNghiem
                 {
                     ReportDocument rd = new ReportDocument();
                     //rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\FormBaoCaoTopDiem.cs");
-                    rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
+                    rd.Load(@"D:\Nga\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
                     rd.SetParameterValue("@diemThap", textBox1.Text);
                     rd.SetParameterValue("@diemCao", 10);
                     crystalReportViewer1.ReportSource = rd;
