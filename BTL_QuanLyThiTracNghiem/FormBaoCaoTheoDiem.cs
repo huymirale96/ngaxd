@@ -42,12 +42,17 @@ namespace BTL_QuanLyThiTracNghiem
                 else
                 {
                     ReportDocument rd = new ReportDocument();
-                    rd.Load(@"C:\Users\Huy dzz\Documents\Visual Studio 2015\Projects\BTL_QuanLyThiTracNghiem\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
+                    rd.Load(@"D:\Nga\BTL_QuanLyThiTracNghiem\BaoCaoTheoDiem.rpt");
                     rd.SetParameterValue("@diemThap", textBox1.Text);
                     rd.SetParameterValue("@diemCao", textBox2.Text);
                     crystalReportViewer1.ReportSource = rd;
                 }
             }
+        }
+
+        private void FormBaoCaoTheoDiem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

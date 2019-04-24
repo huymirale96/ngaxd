@@ -103,6 +103,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FormBaoCaoTheoDiem";
             this.Text = "FormBaoCaoTheoDiem";
+            this.Load += new System.EventHandler(this.FormBaoCaoTheoDiem_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

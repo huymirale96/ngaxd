@@ -214,6 +214,14 @@ tblbaithi.dNgayThi as 'Thời Gian', tblBaiThi.iDiem as 'Điểm' from tblBaiThi
 where tblsinhvien.smasinhvien = tblBaiThi.sMaSinhVien and tblBaiThi.iDiem >= @diemThap
 and tblBaiThi.iDiem <= @diemCao;
 
+
+
+create proc topSinhViem_Diem1
+as
+select top 3 a.smasinhvien, a.stensinhvien,a.squequan, b.iDiem from tblsinhvien a, tblBaiThi b
+where a.smasinhvien = b.sMaSinhVien
+order by b.iDiem desc;
+
 select * from tblChiTietBaiThi
 
 select * from tblbaithi

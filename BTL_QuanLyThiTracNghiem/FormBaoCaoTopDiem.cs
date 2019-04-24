@@ -22,7 +22,7 @@ namespace BTL_QuanLyThiTracNghiem
         {
             ReportDocument rd = new ReportDocument();
 
-            rd.Load(@"D:\BT1\Bt2mian\BTL_QuanLyThiTracNghiem\BaoCaoTopDiem.rpt");
+            rd.Load(@"D:\Nga\BTL_QuanLyThiTracNghiem\BaoCaoTopDiem.rpt");
             crystalReportViewer1.ReportSource = rd;
 
         }

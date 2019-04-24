@@ -95,6 +95,7 @@ namespace BTL_QuanLyThiTracNghiem
         private void báoCáoTopCácBàiThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormBaoCaoTopDiem fb = new FormBaoCaoTopDiem();
+            //BaoCaoDiem1 fb = new BaoCaoDiem1();
             fb.MdiParent = this;
             fb.Show();
         }
