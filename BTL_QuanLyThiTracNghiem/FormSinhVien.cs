@@ -18,6 +18,7 @@ using System.Configuration;
 //viet tu server 11
 //222212122ewe
 //Data Source=DESKTOP-JJ9G0NT;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True
+//123
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
