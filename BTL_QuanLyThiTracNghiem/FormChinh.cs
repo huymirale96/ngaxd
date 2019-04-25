@@ -91,7 +91,7 @@ namespace BTL_QuanLyThiTracNghiem
 
         private void báoCáoSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormBaoCaoTheoDiem fd = new FormBaoCaoTheoDiem();
+            FormBaoCaoTheoDiem fd = new FormBaoCaoTheoDiem(); ///////
             fd.MdiParent = this;
             fd.Show();
         }
