@@ -19,6 +19,7 @@ using System.Configuration;
 //222212122ewe
 //Data Source=DESKTOP-JJ9G0NT;Initial Catalog=quanLyThiTracNghiem;Integrated Security=True
 //123//246//789
+//Thị Nga
 namespace BTL_QuanLyThiTracNghiem
 {
     public partial class FormSinhVien : Form
