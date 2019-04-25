@@ -11,7 +11,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using CrystalDecisions.CrystalReports.Engine;
-namespace BTL_QuanLyThiTracNghiem
+namespace BTL_QuanLyThiTracNghiem  ///
 {
     public partial class FormBaoCaoTheoDiem : Form
     {
