@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace BTL_QuanLyThiTracNghiem
 {
@@ -94,10 +98,16 @@ namespace BTL_QuanLyThiTracNghiem
 
         private void báoCáoTopCácBàiThiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormBaoCaoTopDiem fb = new FormBaoCaoTopDiem();
-            //BaoCaoDiem1 fb = new BaoCaoDiem1();
-            fb.MdiParent = this;
-            fb.Show();
+            
+            FormBaoCaoTopDiem1 form = new FormBaoCaoTopDiem1();
+            form.MdiParent = this;
+            form.Show();
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void làmBàiThiTrắcNghiệmToolStripMenuItem_Click(object sender, EventArgs e)

@@ -84,11 +84,11 @@
     <Compile Include="FormBaoCaoTheoDiem.Designer.cs">
       <DependentUpon>FormBaoCaoTheoDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBaoCaoTopDiem.cs">
+    <Compile Include="FormBaoCaoTopDiem1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBaoCaoTopDiem.Designer.cs">
-      <DependentUpon>FormBaoCaoTopDiem.cs</DependentUpon>
+    <Compile Include="FormBaoCaoTopDiem1.Designer.cs">
+      <DependentUpon>FormBaoCaoTopDiem1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCauHoiThi.cs">
       <SubType>Form</SubType>
@@ -145,8 +145,8 @@
     <EmbeddedResource Include="FormBaoCaoTheoDiem.resx">
       <DependentUpon>FormBaoCaoTheoDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBaoCaoTopDiem.resx">
-      <DependentUpon>FormBaoCaoTopDiem.cs</DependentUpon>
+    <EmbeddedResource Include="FormBaoCaoTopDiem1.resx">
+      <DependentUpon>FormBaoCaoTopDiem1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCauHoiThi.resx">
       <DependentUpon>FormCauHoiThi.cs</DependentUpon>

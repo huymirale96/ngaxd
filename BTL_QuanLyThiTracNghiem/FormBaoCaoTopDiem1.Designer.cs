@@ -1,6 +1,6 @@
 ﻿namespace BTL_QuanLyThiTracNghiem
 {
-    partial class FormBaoCaoTopDiem
+    partial class FormBaoCaoTopDiem1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,25 +34,25 @@
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.AutoSize = true;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(792, 355);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(629, 356);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // FormBaoCaoTopDiem
+            // FormBaoCaoTopDiem1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 437);
+            this.ClientSize = new System.Drawing.Size(629, 356);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FormBaoCaoTopDiem";
-            this.Text = "FormBaoCaoTopSinhVien";
+            this.Name = "FormBaoCaoTopDiem1";
+            this.Text = "FormBaoCaoTopDiem1";
+            this.Load += new System.EventHandler(this.FormBaoCaoTopDiem1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
