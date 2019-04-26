@@ -89,7 +89,31 @@ namespace BTL_QuanLyThiTracNghiem  ///
 
         private void FormBaoCaoTheoDiem_Load(object sender, EventArgs e)
         {
+            DataTable tbl;
+            string cnnstr = ConfigurationManager.ConnectionStrings["test"].ConnectionString;
+            {
+                using (SqlConnection cnn = new SqlConnection(cnnstr))
+                {
+                    cnn.Open();
+                    using (SqlCommand cmd = new SqlCommand("thongke_theodiem", cnn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@diemcao", 10);
+                        cmd.Parameters.AddWithValue("@diemthap", 0);
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+                            tbl = new DataTable();
+                            da.Fill(tbl);
+                        }
+                    }
+                    cnn.Close();
+                }
 
+                // MessageBox.Show("Bạn có muốn thoát khỏi chương trình không ?", "Xác nhận", MessageBoxButtons.OK);
+                BaoCaoTheoDiem report = new BaoCaoTheoDiem();
+                report.SetDataSource(tbl);
+                crystalReportViewer1.ReportSource = report;
+            }
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)
