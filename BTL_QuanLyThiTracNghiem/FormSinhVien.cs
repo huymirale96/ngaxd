@@ -111,20 +111,31 @@ namespace BTL_QuanLyThiTracNghiem
             {
                 if (kTraMsv())
                 {
-                    MessageBox.Show("MSV Phù Hợp", "Thông Báo");
-                    using (SqlConnection conn = new SqlConnection(cnnstr))
+                    DateTime dt = DateTime.Parse(textBoxNS.Text);
+                    int year = dt.Year;
+                    int tuoi = 2019 - year;
+
+                    MessageBox.Show("MSV Phù Hợp", "Thông Báo"+year.ToString());
+                    if (tuoi >= 18)
                     {
-                        SqlCommand cmd = new SqlCommand("themSinhVien", conn);
-                        conn.Open();
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@msv", textBoxMSV.Text);
-                        cmd.Parameters.AddWithValue("@ten", textBoxTen.Text);
-                        cmd.Parameters.AddWithValue("@que", textBoxQueQuan.Text);
-                        cmd.Parameters.AddWithValue("@ngaysinh", textBoxNS.Text);
-                        cmd.Parameters.AddWithValue("@matkhau", textBoxMK.Text);
-                        // cmd.Parameters.AddWithValue("@dapan4", textBoxD.Text);
-                        //cmd.Parameters.AddWithValue("@dapandung", textBoxDeBai.Text);
-                        cmd.ExecuteNonQuery();
+                        using (SqlConnection conn = new SqlConnection(cnnstr))
+                        {
+                            SqlCommand cmd = new SqlCommand("themSinhVien", conn);
+                            conn.Open();
+                            cmd.CommandType = CommandType.StoredProcedure;
+                            cmd.Parameters.AddWithValue("@msv", textBoxMSV.Text);
+                            cmd.Parameters.AddWithValue("@ten", textBoxTen.Text);
+                            cmd.Parameters.AddWithValue("@que", textBoxQueQuan.Text);
+                            cmd.Parameters.AddWithValue("@ngaysinh", textBoxNS.Text);
+                            cmd.Parameters.AddWithValue("@matkhau", textBoxMK.Text);
+                            // cmd.Parameters.AddWithValue("@dapan4", textBoxD.Text);
+                            //cmd.Parameters.AddWithValue("@dapandung", textBoxDeBai.Text);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tuoi Phai Lon Hon 18", "Thông Báo");
                     }
                 }
                 else
